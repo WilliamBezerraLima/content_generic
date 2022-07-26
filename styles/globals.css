@@ -1,14 +1,51 @@
+:root {
+  --link-color: #247fa3;
+  --link-color-hover: #14739a;
+  --link-underline: rgba(33, 128, 167, 0.15);
+  --link-underline-hover: rgba(33, 128, 167, 0.3);
+  --darkenPrimary: #14739a;
+  --spacer: 1rem;
+  --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #fff;
+  /* color: #171A22; */
+  color: #333;
+  font-family: var(--font-family-base);
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* a {
+  color: inherit;
+  text-decoration: none;
+} */
+
+ul li {
+  margin: calc(var(--spacer) * .45) 0;
+}
+
+li::marker {
+  color: var(--link-color);
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: var(--link-color);
+  border-bottom: 1px solid var(--link-underline);
+  padding-bottom: 2px;
+  transition: border 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--link-color-hover);
+  border-bottom-color: var(--link-underline-hover);
 }
 
 * {
