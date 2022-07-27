@@ -13,19 +13,12 @@ body {
   padding: 0;
   margin: 0;
   background-color: #fff;
-  /* color: #171A22; */
   color: #333;
   font-family: var(--font-family-base);
-  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-size: 17px;
   line-height: 1.5;
+  
 }
-
-/* a {
-  color: inherit;
-  text-decoration: none;
-} */
 
 ul li {
   margin: calc(var(--spacer) * .45) 0;
@@ -50,6 +43,10 @@ a:hover {
 
 * {
   box-sizing: border-box;
+}
+
+.grid8 {
+  width: 700px;
 }
 
 @media (prefers-color-scheme: dark) {
