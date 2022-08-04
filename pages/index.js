@@ -13,15 +13,15 @@ export function getStaticProps() { return { props: {} }; }
 export default function Home() {
 
   // https://eight-bites.blog/en/2021/11/adsense-localhost/
-  // useEffect(() => {
-  //   var ads = document.getElementsByClassName("adsbygoogle").length;
-  //   for (var i = 0; i < ads; i++) {
-  //     try {
-  //       console.log('ads started', ads)
-  //         (adsbygoogle = window.adsbygoogle || []).push({});
-  //     } catch (e) { }
-  //   }
-  // }, []);
+  useEffect(() => {
+    var ads = document.getElementsByClassName("adsbygoogle").length;
+    for (var i = 0; i < ads; i++) {
+      try {
+        console.log('ads started', ads)
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) { }
+    }
+  }, []);
 
   return (
     <Container>
@@ -86,12 +86,12 @@ export default function Home() {
             </Container>
           </Container>
           <Sidebar>Sidebar
-            {/* <ins className="adsbygoogle"
+            <ins className="adsbygoogle"
               style={{ "display": "block" , textAlign: "center"  }}
               data-ad-client="ca-pub-9458208914000555"
               data-ad-slot="8020809607"
               data-ad-format="auto"
-              data-full-width-responsive="true"></ins> */}
+              data-full-width-responsive="true"></ins>
           </Sidebar>
         </Article>
       </Main>
