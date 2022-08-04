@@ -25,7 +25,16 @@ export default function Home() {
 
   return (
     <Container>
-      <Script async crossOrigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9458208914000555"></Script>
+
+<Script
+   id="Adsense-id"
+   data-ad-client="ca-pub-9458208914000555"
+   async="true"
+   strategy="beforeInteractive"
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+/>
+
+      {/* <Script async crossOrigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9458208914000555"></Script> */}
       {/* <Script async crossOrigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9458208914000555"></Script> */}
       <Head>
         <title>Create Next App</title>
