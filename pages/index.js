@@ -32,6 +32,7 @@ export default function Home() {
    async="true"
    strategy="beforeInteractive"
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    onError={ (e) => { console.error('Script failed to load', e) }}
 />
 
       {/* <Script async crossOrigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9458208914000555"></Script> */}
